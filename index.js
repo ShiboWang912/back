@@ -48,10 +48,10 @@ app.use(
 app.use("/api", incidentRoute);
 
 // PORT
-//const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8000;
 
-app.listen(port, () => {
-  console.log("Listening on port " + port);
+app.listen(process.env.PORT || 8000, () => {
+  console.log("Listening on port " + process.env.PORT || 8000);
 });
 
 // 404 Handler
